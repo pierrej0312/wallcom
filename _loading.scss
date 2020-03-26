@@ -1,0 +1,25 @@
+.main-logo.loading {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+}
+.logo.loading {
+    display: block;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background-color: red;
+    animation-name: anim-loading-logo;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+.hidden {
+    opacity:0;
+}
