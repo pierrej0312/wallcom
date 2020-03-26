@@ -106,12 +106,11 @@ figure {
   height: 110px;
 }
 
-.logo.loading {
+.main-logo.loading .logo.loading {
   display: block;
   position: relative;
   width: 110px;
   height: 110px;
-  background-color: red;
   -webkit-animation-name: anim-loading-logo;
           animation-name: anim-loading-logo;
   -webkit-animation-duration: 0.5s;
@@ -124,6 +123,13 @@ figure {
           animation-delay: 0s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+.main-logo.loading .logo.loading span {
+  width: 16px;
+  height: 75px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .hidden {
