@@ -11,17 +11,25 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="main-logo loading">
-            <div class="logo loading">
+        <a href="index.html" class="main-logo loaded">
+            <div class="logo">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <strong class="hidden"></strong>
-            <h1 class="remove"></h1>
+            <strong class="name">Wallcom</strong>
+            <h1>Wallcom - creation de site internet - web - communication digitale - etc</h1>
         </a>
-        <nav class="main-nav hidden"></nav>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="" class="devices">Services</a></li>
+                <li><a href="" class="about">A propos</a></li>
+                <li><a href="" class="works">Realisations</a></li>
+                <li><a href="" class="askPrice CTA">Devis</a></li>
+                <li><a href="" class="contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main >
         <section class="main-descr hidden"></section>
@@ -31,5 +39,13 @@
         <section class="hidden"></section>
     </main>
     <footer class="hidden"></footer>
+    <script>
+        let logo = document.querySelector(".main-logo")
+
+        window.addEventListener("load", function() {
+            console.log('document load started');
+            logo.classList.add("loaded");
+        });
+    </script>
 </body>
 </html>
