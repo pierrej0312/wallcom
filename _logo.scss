@@ -74,10 +74,31 @@
     }
     h1 {
         position: absolute;
-        top:-250px;
+        top:-2250px;
     }
 }
 
+header.start {
+    .main-logo.loaded {
+        .logo {
+            :nth-child(1) {
+                background: linear-gradient(180deg, #FFFFFF 26.56%, rgba(255, 255, 255, 0) 97.92%);
+            }
+            :nth-child(2) {
+                background: white;
+            }
+            :nth-child(3) {
+                background: white;
+            }
+            :nth-child(4) {
+                background: linear-gradient(180deg, #FFFFFF 26.56%, rgba(255, 255, 255, 0) 97.92%);
+            }
+        }
+        .name {
+            color:white;
+        }
+    }
+}
 
 .hidden {
     opacity:0;

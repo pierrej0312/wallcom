@@ -6,3 +6,35 @@
         transform: rotate(360deg);
     }
 }
+@keyframes nav-coming {
+    0% {
+        opacity:0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+@keyframes main-coming {
+    0%{
+        width:30px;
+        height:30px;
+        top:-30px;
+    }
+    50%{
+        width:20px;
+        height:60px;
+        top:60%;
+    }
+    55% {
+        width:60px;
+        height:20px;
+        top:60%;
+    }
+    100% {
+        width:170vw;
+        height:100vh;
+        top: 40%;
+    }
+}

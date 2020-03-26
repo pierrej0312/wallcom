@@ -1,0 +1,48 @@
+.main-descr {
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+
+    .bg{
+        width:170vw;
+        height:100vh;
+        position:absolute;
+        z-index: -9999;
+        top: 40%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        background: radial-gradient(89.65% 89.65% at 102.13% 133.32%, #FFC603 0%, rgba(255, 198, 3, 0) 100%), #D35C50;
+        animation-name: main-coming;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(.65,.27,.56,1.55);
+    }
+    .descr {
+        position:absolute;
+        top:40vh;
+        left: 20vw;
+        width:400px;
+        h2 {
+            color:white;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 150%;
+            strong {
+                display:inline-block;
+                font-size: 40px;
+            }
+        }
+        p {
+            color:white;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 180%;
+        }
+    }
+}
