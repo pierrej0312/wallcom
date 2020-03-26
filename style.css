@@ -111,6 +111,9 @@ figure {
   position: relative;
   width: 110px;
   height: 110px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: red;
   -webkit-animation-name: anim-loading-logo;
           animation-name: anim-loading-logo;
   -webkit-animation-duration: 0.5s;
@@ -129,6 +132,7 @@ figure {
   display: block;
   width: 16px;
   height: 75px;
+  border-radius: 70px;
   -webkit-transform-origin: center;
           transform-origin: center;
   position: absolute;
@@ -138,31 +142,53 @@ figure {
           transform: translate(-50%, -50%);
 }
 
-.main-logo.loading .logo.loading:nth-child(1) {
+.main-logo.loading .logo.loading :nth-child(1) {
   background-color: #CE4639;
   top: 0%;
-  left: 0%;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-}
-
-.main-logo.loading .logo.loading:nth-child(2) {
-  background-color: #FFC603;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.main-logo.loading .logo.loading:nth-child(3) {
-  background-color: #5D959E;
-  top: 0%;
-  left: 100%;
+  left: 16%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
 
+.main-logo.loading .logo.loading :nth-child(2) {
+  background-color: #FFC603;
+  top: 50%;
+  left: 44%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.main-logo.loading .logo.loading :nth-child(3) {
+  background-color: #5D959E;
+  top: 0%;
+  left: 69%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
 .hidden {
   opacity: 0;
+}
+
+@-webkit-keyframes anim-loading-logo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-loading-logo {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

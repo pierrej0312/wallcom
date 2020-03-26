@@ -12,6 +12,8 @@
         position: relative;
         width: 110px;
         height: 110px;
+        transform-origin: center;
+        background-color: red;
         animation-name: anim-loading-logo;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
@@ -23,29 +25,30 @@
             display: block;
             width: 16px;
             height: 75px;
+            border-radius: 70px;
             transform-origin: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
-        &:nth-child(1) {
+        :nth-child(1) {
             background-color: $first-color;
             top: 0%;
-            left: 0%;
-            transform: rotate(-30deg);
+            left: 16%;
+            transform: rotate(30deg);
         }
-        &:nth-child(2) {
+        :nth-child(2) {
             background-color: $second-color;
-            top: 100%;
-            left: 50%;
+            top: 50%;
+            left: 44%;
             transform: rotate(90deg);
         }
-        &:nth-child(3) {
+        :nth-child(3) {
             background-color: $third-color;
             top: 0%;
-            left: 100%;
-            transform: rotate(30deg);
+            left: 69%;
+            transform: rotate(-30deg);
         }
     }
 }
