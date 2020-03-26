@@ -29,19 +29,19 @@
             transform: translate(-50%, -50%);
         }
         
-        &:nth-child(1) {
+        :nth-child(1) {
             background-color: $first-color;
             top: 0%;
             left: 0%;
             transform: rotate(-30deg);
         }
-        &:nth-child(2) {
+        :nth-child(2) {
             background-color: $second-color;
             top: 100%;
             left: 50%;
             transform: rotate(90deg);
         }
-        &:nth-child(3) {
+        :nth-child(3) {
             background-color: $third-color;
             top: 0%;
             left: 100%;
