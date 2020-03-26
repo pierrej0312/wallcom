@@ -357,20 +357,13 @@ header .main-nav ul li {
   transition: all 300ms ease-in-out;
 }
 
-header .main-nav ul li:hover,
-header .main-nav ul li:focus {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-}
-
 header .main-nav ul .CTA {
-  background: #CE4639;
   color: white;
+  background: linear-gradient(261.8deg, #CE4639 -16.77%, #FFC603 163.27%);
   padding: 8px 28px 8px 28px;
   border-radius: 70px;
   width: 40px;
   height: 18px;
-  text-transform: uppercase;
   position: relative;
   overflow: hidden;
 }
@@ -383,17 +376,18 @@ header .main-nav ul .CTA::after {
   width: 100px;
   height: 100px;
   top: 50%;
-  left: 50%;
+  left: -100%;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: translate(-50%, -50%) rotate(15deg);
           transform: translate(-50%, -50%) rotate(15deg);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  z-index: -1;
 }
 
-header .main-nav ul .CTA :nth-child(1) {
-  z-index: 999;
+header .main-nav ul .CTA:hover::after {
+  left: 50%;
 }
 
 @-webkit-keyframes anim-loading-logo {
