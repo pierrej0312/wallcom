@@ -94,6 +94,10 @@ figure {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,7 +417,7 @@ header .main-nav ul .CTA {
   background: linear-gradient(261.8deg, #CE4639 -16.77%, #FFC603 163.27%);
   padding: 8px 28px 8px 28px;
   border-radius: 70px;
-  width: 40px;
+  width: 70px;
   height: 14px;
   position: relative;
   overflow: hidden;
@@ -424,7 +428,7 @@ header .main-nav ul .CTA::after {
   display: block;
   position: absolute;
   background: #FFC603;
-  width: 100px;
+  width: 150px;
   height: 100px;
   top: 50%;
   left: -100%;
@@ -446,6 +450,9 @@ header .main-nav ul .CTA .askPrice {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 100;
@@ -455,7 +462,7 @@ header .main-nav ul .CTA .askPrice {
 
 header .main-nav ul .CTA:hover .askPrice,
 header .main-nav ul .CTA:focus .askPrice {
-  color: #CE4639;
+  color: white;
 }
 
 header.start {
