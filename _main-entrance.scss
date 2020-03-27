@@ -1,5 +1,9 @@
 .main-descr {
     position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    align-items: center;
     width:100vw;
     height:100vh;
     overflow: hidden;
@@ -24,8 +28,16 @@
     .descr {
         position:absolute;
         top:40vh;
-        left: 20vw;
+        left: 0vw;
+        opacity:0;
         width:400px;
+        animation-name: main-descr-coming;
+            animation-duration: 0.3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1.3s;
+            animation-timing-function: ease-in-out;
+
         h2 {
             color:white;
             font-family: Roboto;
@@ -43,6 +55,33 @@
             font-weight: 300;
             font-size: 17px;
             line-height: 180%;
+        }
+    }
+    .look-bottom {
+        position:relative;
+        width:33px;
+        height:18px;
+        top:95vh;
+
+        &::after,
+        &::before {
+            content:"";
+            display:block;
+            width:23px;
+            height:3px;
+            border-radius:70px;
+            background:$first-color;
+            position:absolute;
+        }
+        &::before {
+            bottom:100%;
+            left:-2px;
+            transform: rotate(45deg);
+        }
+        &::after {
+            bottom:100%;
+            right:-2px;
+            transform: rotate(-45deg);
         }
     }
 }

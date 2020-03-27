@@ -479,6 +479,19 @@ header.start .main-nav ul .CTA .askPrice {
 
 .main-descr {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: bottom;
+      -ms-flex-pack: bottom;
+          justify-content: bottom;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -512,8 +525,21 @@ header.start .main-nav ul .CTA .askPrice {
 .main-descr .descr {
   position: absolute;
   top: 40vh;
-  left: 20vw;
+  left: 0vw;
+  opacity: 0;
   width: 400px;
+  -webkit-animation-name: main-descr-coming;
+          animation-name: main-descr-coming;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .main-descr .descr h2 {
@@ -535,6 +561,37 @@ header.start .main-nav ul .CTA .askPrice {
   font-weight: 300;
   font-size: 17px;
   line-height: 180%;
+}
+
+.main-descr .look-bottom {
+  position: relative;
+  width: 33px;
+  height: 18px;
+  top: 95vh;
+}
+
+.main-descr .look-bottom::after, .main-descr .look-bottom::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 3px;
+  border-radius: 70px;
+  background: #CE4639;
+  position: absolute;
+}
+
+.main-descr .look-bottom::before {
+  bottom: 100%;
+  left: -2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main-descr .look-bottom::after {
+  bottom: 100%;
+  right: -2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @-webkit-keyframes anim-loading-logo {
@@ -628,6 +685,28 @@ header.start .main-nav ul .CTA .askPrice {
     width: 170vw;
     height: 100vh;
     top: 40%;
+  }
+}
+
+@-webkit-keyframes main-descr-coming {
+  0% {
+    opacity: 0;
+    left: 0vw;
+  }
+  100% {
+    opacity: 1;
+    left: 20vw;
+  }
+}
+
+@keyframes main-descr-coming {
+  0% {
+    opacity: 0;
+    left: 0vw;
+  }
+  100% {
+    opacity: 1;
+    left: 20vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
