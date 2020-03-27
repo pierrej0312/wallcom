@@ -48,3 +48,21 @@
         left:20vw;
     }
 }
+@keyframes lookBottom-coming {
+    0% {
+        opacity:0;
+        top:90vh;
+        &::after,
+        &::before {
+            opacity: 0;
+        }
+    }
+    100% {
+        opacity:1;
+        top:95vh;
+        &::after,
+        &::before {
+            opacity: 1;
+        }
+    }
+}

@@ -575,7 +575,20 @@ header.start .main-nav ul .CTA .askPrice {
   position: relative;
   width: 33px;
   height: 18px;
-  top: 95vh;
+  top: 90vh;
+  opacity: 0;
+  -webkit-animation-name: lookBottom-coming;
+          animation-name: lookBottom-coming;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .main-descr .look-bottom::after, .main-descr .look-bottom::before {
@@ -715,6 +728,44 @@ header.start .main-nav ul .CTA .askPrice {
   100% {
     opacity: 1;
     left: 20vw;
+  }
+}
+
+@-webkit-keyframes lookBottom-coming {
+  0% {
+    opacity: 0;
+    top: 90vh;
+    ::after,
+    ::before {
+      opacity: 0;
+    }
+  }
+  100% {
+    opacity: 1;
+    top: 95vh;
+    ::after,
+    ::before {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes lookBottom-coming {
+  0% {
+    opacity: 0;
+    top: 90vh;
+    ::after,
+    ::before {
+      opacity: 0;
+    }
+  }
+  100% {
+    opacity: 1;
+    top: 95vh;
+    ::after,
+    ::before {
+      opacity: 1;
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */

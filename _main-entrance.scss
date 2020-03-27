@@ -62,7 +62,14 @@
         position:relative;
         width:33px;
         height:18px;
-        top:95vh;
+        top:90vh;
+        opacity:0;
+        animation-name: lookBottom-coming;
+            animation-duration: 0.3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1.9s;
+            animation-timing-function: ease-in-out;
 
         &::after,
         &::before {
