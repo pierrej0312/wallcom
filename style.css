@@ -531,7 +531,7 @@ header.start .main-nav ul .CTA .askPrice {
 
 .main-descr .descr {
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   left: 0vw;
   opacity: 0;
   width: 400px;
@@ -569,6 +569,35 @@ header.start .main-nav ul .CTA .askPrice {
   font-size: 17px;
   line-height: 180%;
   margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.main-descr .descr .CTA {
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 28px;
+  background: white;
+  color: #CE4639;
+  border-radius: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+
+.main-descr .descr .CTA strong {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .main-descr .look-bottom {
