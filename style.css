@@ -361,7 +361,7 @@ header {
   display: flex;
   padding-left: 7vw;
   padding-right: 7vw;
-  background: #fafafa;
+  background: whitesmoke;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -379,7 +379,7 @@ header .main-nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50vw;
+  width: 600px;
   -webkit-animation-name: nav-coming;
           animation-name: nav-coming;
   -webkit-animation-duration: 0.3s;
@@ -568,6 +568,7 @@ header.start .main-nav ul .CTA .askPrice {
   font-weight: 300;
   font-size: 17px;
   line-height: 180%;
+  margin-top: 20px;
 }
 
 .main-descr .look-bottom {

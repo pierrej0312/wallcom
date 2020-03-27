@@ -10,7 +10,7 @@ header {
     display:flex;
     padding-left:7vw;
     padding-right: 7vw;
-    background:rgba(250,250,250,1);
+    background:rgba(245,245,245,1);
     transition: all 300ms ease-in-out;
 
     .main-nav{
@@ -19,7 +19,7 @@ header {
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            width: 50vw;
+            width: 600px;
             animation-name: nav-coming;
             animation-duration: 0.3s;
             animation-iteration-count: 1;
