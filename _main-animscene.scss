@@ -312,10 +312,39 @@
             border: 7px solid #FFFFFF;
             box-sizing: border-box;
             border-radius: 11px;
-            transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(1.2);
-
-            
+            transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(1.2);          
         }
+        .swipe-qg {
+            position: absolute;
+            top:30%;
+            left:5%;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(198.07% 778.95% at -12.94% 196.46%, rgba(205, 173, 150, 0.47) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+            border: 7px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 11px;
+            transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(1.2);
+        }
+        .staircase-swipe1 {
+            position: absolute;
+            top:48%;
+            left:15%;
+            width: 100px;
+            height: 30px;
+            background: radial-gradient(198.07% 778.95% at -12.94% 196.46%, rgba(205, 173, 150, 0.47) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+            border: 7px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 11px;
+            transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(1.2);
+            animation-name: animated-staircase;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+                animation-duration: 5s;
+                animation-delay: 0s;
+                animation-timing-function: ease-in-out;
+        }
+
         .diagram-refer {
             position:absolute;
             width:100px;
@@ -335,6 +364,17 @@
                 background:linear-gradient(261.8deg, #D7BFAD -16.77%, #F0E9E3 -16.75%, #F0E9E3 163.27%);
                 transform: skewX(4deg) skewY(28deg) scale(1.2);
             }
+
+            .swipe-qg-left {
+                position:absolute;
+                top:44.75%;
+                left:1.5%;
+                width:60px;
+                height:10px;
+                background:linear-gradient(261.8deg, #D7BFAD -16.77%, #F0E9E3 -16.75%, #F0E9E3 163.27%);
+                transform: skewX(4deg) skewY(28deg) scale(1.2);
+            }
+
             .ref-anim {
                 font-weight: 700;
                 font-size: 20px;
@@ -368,8 +408,19 @@
             }
             .refer-qg-right {
                 position:absolute;
-                top:37.25%;
+                top:37%;
                 left:79.1%;
+                width:67px;
+                height:10px;
+                background:#D7BFAD;
+                margin-top:-32px;
+                transform: skewX(4deg) skewY(-26deg) scale(1.2);
+            }
+
+            .swipe-qg-right {
+                position:absolute;
+                top:51.5%;
+                left:14.5%;
                 width:67px;
                 height:10px;
                 background:#D7BFAD;
@@ -380,6 +431,20 @@
                 position:absolute;
                 top:18%;
                 left:70.1%;
+                width: 100px;
+                height: 100px;
+                background: #D7BFAD;
+                border: 7px solid #D7BFAD;
+                box-sizing: border-box;
+                border-radius: 11px;
+                transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) scale(1.2);
+                box-shadow: -60px 70px 10px rgba(116, 51, 35, 0.29);
+                z-index:-99;
+            }
+            .swipe-qg-bottom {
+                position:absolute;
+                top:32.5%;
+                left:5%;
                 width: 100px;
                 height: 100px;
                 background: #D7BFAD;
